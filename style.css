@@ -1,0 +1,82 @@
+body{
+    background: url("circles-and-roundaboutskw.png");
+    /* Background pattern from Toptal Subtle Patterns */
+    color: rgb(83, 58, 80);
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+
+}
+
+#main_header, #container, footer{
+    width: 956px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    #main_header, #container, footer {width: 95vw;};
+    p {font-size: 9px;};
+
+    #body {background-color: yellow;};
+    #nav-bar {display: none;};
+    #container {background-color: blue;}
+}
+
+
+ul {
+    list-style-type:none;
+    padding-inline-start: 6px;
+    text-align: left;   
+}
+
+#navbar {
+justify-content: flex-start;
+width: 234px;
+padding: 3px;
+background-color: beige;
+} 
+
+#navbar > ul >li {
+    height: 50px;
+    width: 200px;
+    height: 72px;
+    padding: 4px;
+    border-bottom: dotted #666 2px;
+}
+
+
+#navbar > ul >li a {
+    color: rgb(83, 58, 80);
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#navbar > ul >li:first-child{
+    border-top: dotted #666 2px;    
+}    
+
+
+#container {
+    display: flex;
+    padding: 8px;
+
+}
+#main-doc{
+    width: 750px;
+}
+
+
+.main-section{
+    padding: 12px;
+    text-align: justify;
+}
+
+.nav-link {
+    display: block;
+    height: 30px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

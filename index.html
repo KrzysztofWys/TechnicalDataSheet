@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript description</title>
+</head>
+
+<body>
+    <header id="main_header">
+        <h1>Some information concerning JavaScript</h1>
+    </header>
+
+    <div id=container>
+        <nav id="navbar">
+            <header id="nav_header">
+                <h2>Contents</h2>
+            </header>
+            <ul>
+                <li><a class="nav-link" href="#What_is_JavaScript">What is JavaScript</a></li>
+                <li><a class="nav-link" href="#Variables_in_JavaScript">Variables in JavaScript</a></li>
+                <li><a class="nav-link" href="#Quoting_Strings_with_Single_Quotes">Quoting Strings with Single
+                        Quotes</a></li>
+                <li><a class="nav-link" href="#Escape_Sequences_in_String">Escape Sequences in String</a></li>
+                <li><a class="nav-link" href="#Functions_on_strings">Functions on strings</a></li>
+                <li><a class="nav-link" href="#Understanding_String_Immutability">Understanding String Immutability</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="What_is_JavaScript">
+                <header class="section_header">
+                    <h3>What is JavaScript</h3>
+                </header>
+                <p>JavaScript is a high-level, interpreted scripting language that conforms to
+                    the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic
+                    typing, prototype-basedobject-orientation, and first-class functions </p>
+                <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.
+                    JavaScript enables interactive web pages and is an essential part of web applications. The vast
+                    majority of websites use it, and major web browsers have a dedicated JavaScript engine to
+                    execute it.
+                </p>
+                <p>As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including
+                    object-oriented and prototype-based) programming styles. It has APIs for working with text, arrays,
+                    dates, regular expressions, and the DOM, but the language itself does not include any I/O, such as
+                    networking, storage, or graphics facilities. It relies upon the host environment in which it is
+                    embedded to provide these features.
+                </p>
+            </section>
+            <section class="main-section" id="Variables_in_JavaScript">
+                <header class="section_header">
+                    <h3>Variables in JavaScript</h3>
+                </header>
+                <ul>
+                    <li class="subsection">
+                        <h4>Numerical variables</h4>
+                        <p>Variables allow computers to store and manipulate data in a dynamic fashion. They do this by
+                            using a "label" to point to the data rather than using the data itself. Any of the seven
+                            data types may be stored in a variable.
+                            Variablesare similar to the x and y variables you use in mathematics, which means they're a
+                            simple name to represent the data we want to refer to. Computer variablesdiffer from
+                            mathematical variables in that they can store different values at different times.</p>
+                    </li>
+                    <li class="subsection">
+                        <h4>String variables</h4>
+                        <p>
+                            Computers distinguish between numbers, such as the number 12, and strings, such
+                            as "12", "dog", or "123 cats", which are collections of characters. Computers can perform
+                            mathematical operations on a number, but not on a string.
+                        </p>
+                    </li>
+                    <li class="subsection">
+                        <h4 class="subsection">Storing Values with the Assignment Operator</h4>
+                        <p>In JavaScript, you can store a value in a variable with the assignment operator.</p>
+                        <code>myVariable = 5;</code>>
+                        <p>This assigns the Numbervalue 5to myVariable.
+                            Assignment always goes from right to left. Everything to the right of the =operator is
+                            resolved
+                            before the value is assigned to the variable to the left of the operator.</p>
+                        <code>myVar = 5;<br>
+                        myNum = myVar;</code>
+                    </li>
+                    <li class="subsection">
+                        <h4 class="subsection">Undefined variables</h4>
+                        <p>When JavaScript variables are declared, they have an initial value of undefined. If you do a
+                            mathematical operation on an undefinedvariable your result will be NaNwhich means "Not a
+                            Number". If you concatenate a string with an undefinedvariable, you will get a
+                            literal string of "undefined".</p>
+                        <code>var someVariable;<br>
+                            var anotherVariableName;<br>
+                            var thisVariableNameIsSoLong;</code>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="main-section" id="Quoting_Strings_with_Single_Quotes">
+                <header class="section_header">
+                    <h3>Quoting Strings with Single Quotes</h3>
+                </header>
+                <p>String values in JavaScript may be written with single or double quotes, as long as you start and end
+                    with the same type of quote. Unlike some other programming languages, single and double quotes work
+                    the same in JavaScript.</p>
+                <code>doubleQuoteStr = "This is a string"; <br>
+                    singleQuoteStr = 'This is also a string';</code>
+
+                <p>The reason why you might want to use one type of quote over the other is if you want to use both in
+                    a string. This might happen if you want to save a conversation in a string and have the conversation
+                    in quotes. Another use for it would be saving an <a>tag with various attributes in quotes, all
+                        within a string.</p>
+            </section>
+            <section class="main-section" id="Escape_Sequences_in_String">
+                <header class="section_header">
+                    <h3>Escape Sequences in String</h3>
+                </header>
+                <p>Quotes are not the only characters that can be escaped inside a string. There are two reasons to
+                    use escaping characters: First is to allow you to use characters you might not otherwise be able
+                    to type out, such as a backspace. Second is to allow you to represent multiple quotes in a
+                    string without JavaScript misinterpreting what you mean. We learned this in the previous
+                    challenge.</p>
+
+            </section>
+            <section class="main-section" id="Functions_on_strings">
+                <header class="section_header">
+                    <h3>Functions on strings</h3>
+                </header>
+                <ul>
+                    <li>Concatenating Strings with Plus Operator</li>
+                    <p>Concatenating Strings with Plus Operator
+                        n JavaScript, when the +operator is used with a Stringvalue, it is called
+                        the concatenation operator. You can build a new string out of other strings
+                        by concatenating them together.<br>
+                        Example</p>
+                    <code>'My name is Alan,' + ' I concatenate.'</code>
+                    <p>Note<br>
+                        Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll
+                        need to add them yourself.</p>
+                    <li>Constructing Strings with Variables</li>
+                    <p>Sometimes you will need to build a string, Mad Libs style. By using the concatenation operator
+                        (+), you can insert one or more variables into a string you're building.</p>
+                    <li>Appending Variables to Strings</li>
+                    <p>Just as we can build a string over multiple lines out of string literals, we can also append
+                        variables to a string using the plus equals (+=) operator. </p>
+                    <li>Use Bracket Notation to Find the Character in a String</li>
+                    <p>
+                        Bracket notationis a way to get a character at a specific indexwithin a string.
+                        Most modern programming languages, like JavaScript, don't start counting at 1 like humans do.
+                        They start at 0. This is referred to as Zero-based indexing.
+                        For example, the character at index 0 in the word "Charles" is "C". So if <code>var firstName =
+                        "Charles"</code>, you can get the value of the first letter of the string by
+                        using firstName[0].
+                    </p>
+                </ul>
+            </section>
+            <section class="main-section" id="Understanding_String_Immutability">
+                <header class="section_header">
+                    <h3>Understanding String Immutability</h3>
+                </header>
+                <p>In JavaScript, String values are immutable, which means that they cannot be altered once created.
+                    For example, the following code:</p>
+                <code>var myStr = "Bob";<br>
+                        myStr[0] = "J";</code>
+                <p>change the value of myStrto "Job", because the contents of myStrcannot be altered. Note that
+                    this does not mean that myStrcannot be changed, just that the individual characters of a string
+                    literal cannot be changed. The only way to change myStrwould be to assign it with a new string,
+                    like this:</p>
+                <code>myStr="Bob" ; myStr="Job"; </code>
+            </section>
+        </main>
+    </div>
+    <footer>Developed by: Krzysztof Wysokiński on Codepen 2019.</footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
